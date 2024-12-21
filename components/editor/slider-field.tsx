@@ -31,7 +31,7 @@ const SliderField: React.FC<SliderFieldProps> = ({
   
     return (
       <>
-        <div className="flex items-center justify-between mt-8">
+        <div className="flex items-center justify-between mt-2">
           <Label htmlFor={attribute}>{label}</Label>
           <Input
             type="text"

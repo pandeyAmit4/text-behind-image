@@ -142,9 +142,8 @@ const Page = () => {
 
     return (
         <>
-            (
                 <div className='flex flex-col min-h-screen'>
-                    <div className='flex flex-row items-center justify-between p-5 px-10'>
+                    <div className='flex flex-col md:flex-row items-center justify-between p-5 px-10'>
                         <h2 className="text-2xl font-semibold tracking-tight">
                             Text behind image editor
                         </h2>
@@ -159,15 +158,15 @@ const Page = () => {
                             <Button onClick={handleUploadImage}>
                                 Upload image
                             </Button>
-                            <Avatar>
-                                {/* <AvatarImage src={user?.user_metadata.avatar_url} /> */}
-                            </Avatar>
+                            {/* <Avatar>
+                                <AvatarImage src={user?.user_metadata.avatar_url} />
+                            </Avatar> */}
                         </div>
                     </div>
                     <Separator />
                     {selectedImage ? (
-                        <div className='flex flex-row items-start justify-start gap-10 w-full h-screen p-10'>
-                            <div className="min-h-[400px] w-[80%] p-4 border border-border rounded-lg relative overflow-hidden">
+                        <div className='flex flex-col md:flex-row items-start justify-start gap-10 w-full h-screen p-10'>
+                            <div className="min-h-[250px] md:min-h-[400px] w-full md:w-[80%] p-4 border border-border rounded-lg relative overflow-hidden">
                                 {isImageSetupDone ? (
                                     <Image
                                         src={selectedImage} 
@@ -235,7 +234,6 @@ const Page = () => {
                         </div>
                     )}
                 </div>
-            )
         </>
     );
 }

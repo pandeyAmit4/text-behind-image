@@ -9,7 +9,7 @@ import SF from '@/public/sf.png'
 
 export function HeroImages() {
   return (
-    <div className="h-screen w-full">
+    <div className="md:h-screen w-full">
       <LayoutGrid cards={cards} />
     </div>
   );
