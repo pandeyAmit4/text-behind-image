@@ -30,14 +30,14 @@ const SliderField: React.FC<SliderFieldProps> = ({
     };
   
     return (
-      <>
+      <div className="w-1/2 px-4 mb-4">
         <div className="flex items-center justify-between mt-2">
           <Label htmlFor={attribute}>{label}</Label>
           <Input
             type="text"
             value={currentValue}
             onChange={handleSliderInputFieldChange}
-            className="w-12 rounded-md border border-transparent px-2 py-0.5 text-center text-sm text-muted-foreground hover:border-border hover:text-foreground hover:animate-pulse"
+            className="max-w-[120px] rounded-md border border-transparent px-2 py-0.5 text-center text-sm text-muted-foreground hover:border-border hover:text-foreground hover:animate-pulse"
             min={min}
             max={max}
             step={step}
@@ -53,7 +53,7 @@ const SliderField: React.FC<SliderFieldProps> = ({
           className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4 mt-2"
           aria-label={label}
         />
-      </>
+      </div>
     );
 };
 

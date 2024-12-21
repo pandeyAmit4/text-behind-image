@@ -24,14 +24,14 @@ const InputField: React.FC<InputFieldProps> = ({
 
   return (
     <>
-      <div className="flex flex-col items-start">
-        {/* <Label htmlFor={attribute}>{label}</Label> */}
+      <div className="w-1/2 px-4 mb-4">
+        <Label htmlFor={attribute}>{label}</Label>
         <Input
           type="text"
           placeholder='text'
           value={currentValue}
           onChange={handleInputChange}
-          className='mt-2'
+          className='w-full mt-1'
         />
       </div>
     </>

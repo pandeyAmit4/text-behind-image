@@ -23,7 +23,7 @@ const FontFamilyPicker: React.FC<FontFamilyPickerProps> = ({
 
   return (
     <Popover>
-      <div className='flex flex-col items-start justify-start my-8'>
+      <div className='w-1/2 px-4 mb-4'>
         <Label>
           Font Family
         </Label>
@@ -32,7 +32,7 @@ const FontFamilyPicker: React.FC<FontFamilyPickerProps> = ({
             variant="outline"
             role="combobox"
             className={cn(
-              "w-[200px] justify-between mt-3 p-2",
+              "w-full justify-between mt-3 p-2",
               !currentFont && "text-muted-foreground"
             )}
           >

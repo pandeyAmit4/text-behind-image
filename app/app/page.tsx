@@ -165,7 +165,7 @@ const Page = () => {
                     </div>
                     <Separator />
                     {selectedImage ? (
-                        <div className='flex flex-col md:flex-row items-start justify-start gap-10 w-full h-screen p-10'>
+                        <div className='flex flex-col md:flex-row items-start justify-start gap-3 md:gap-10 w-full h-screen p-2 md:p-10'>
                             <div className="min-h-[250px] md:min-h-[400px] w-full md:w-[80%] p-4 border border-border rounded-lg relative overflow-hidden">
                                 {isImageSetupDone ? (
                                     <Image

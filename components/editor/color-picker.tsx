@@ -23,7 +23,7 @@ const ColorPicker: React.FC<ColorPickerProps> = ({
 }) => {
 
   return (
-    <div className={`flex flex-col gap-2`}>
+    <div className={`w-full`}>
       <Label htmlFor={attribute}>{label}</Label>
 
       <div className='flex flex-wrap gap-1 p-1'>
